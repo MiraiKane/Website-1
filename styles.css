@@ -591,3 +591,15 @@ button,input,textarea{font:inherit}
   .info-item{padding:24px 20px}
   .content-card, .role-card, .kpi-card{padding:24px}
 }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
