@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miraikane Global | Career</title>
+  <title>Miraikane Global | Careers</title>
   <meta name="description" content="Miraikane Global website template ready for GitHub Pages hosting.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  
 </head>
 <body>
   <header class="site-header">
@@ -25,7 +24,7 @@
         <a href="index.html" class="">Home</a>
         <a href="about.html" class="">About</a>
         <a href="services.html" class="">Services</a>
-        <a href="careers.html" class="active">Career</a>
+        <a href="careers.html" class="active">Careers</a>
         <a href="contact.html" class="">Contact</a>
       </nav>
       <div class="header-actions">
@@ -36,62 +35,163 @@
   </header>
 
   <main>
-    
+
 <section class="page-hero">
   <div class="container">
     <p class="eyebrow">Careers</p>
-    <h1>We want sharp people, not noise.</h1>
+    <h1>We Believe in Excellence</h1>
     <p>
-      The careers page below is intentionally simple. Static sites do not need a fancy applicant tracking system to look credible.
+      Join the global leading team to build the career with us and add value to the sector.
     </p>
   </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="section-head reveal">
-      <div>
-        <p class="eyebrow">Open roles</p>
-        <h2 class="section-title">Sample positions you can edit directly in HTML.</h2>
-      </div>
-    </div>
-    <div class="grid-3">
-      <article class="role-card reveal">
-        <h3>Research Analyst</h3>
-        <p>Own structured research, market mapping, competitive intelligence, and executive-ready summaries.</p>
+  <div class="container application-layout">
+    <aside class="application-side">
+      <article class="content-card reveal">
+        <h3>Why join Miraikane Global</h3>
+        <ul class="mini-list">
+          <li>Work on business problems that need clarity and discipline.</li>
+          <li>Build skills across research, strategy, execution, and client delivery.</li>
+          <li>Join a team that values ownership, professionalism, and quality.</li>
+        </ul>
       </article>
-      <article class="role-card reveal">
-        <h3>Operations Associate</h3>
-        <p>Support delivery, reporting, process discipline, and project coordination across client workstreams.</p>
+      <article class="info-card reveal">
+        <h3>How this form works</h3>
+        <p>Please fill below application and submit.</p>
+        <p>Because this is a GitHub Pages static site, the form opens an email draft with the entered details. Resume and cover letter files must be attached manually to that email before sending.</p>
       </article>
-      <article class="role-card reveal">
-        <h3>Business Development Associate</h3>
-        <p>Support outreach, pipeline tracking, proposal preparation, and client relationship management.</p>
+      <article class="content-card reveal">
+        <h3>Open roles you can list here</h3>
+        <ul class="mini-list">
+          <li>Research Analyst</li>
+          <li>Operations Associate</li>
+          <li>Business Development Associate</li>
+          <li>Analyst Intern</li>
+        </ul>
       </article>
-    </div>
-  </div>
-</section>
+    </aside>
 
-<section class="section light-section">
-  <div class="container two-col">
     <article class="content-card reveal">
-      <h3>What we value</h3>
-      <ul>
-        <li>Clear thinking under ambiguity</li>
-        <li>Ownership without excuses</li>
-        <li>Professional communication</li>
-        <li>Respect for detail and deadlines</li>
-      </ul>
-    </article>
-    <article class="content-card reveal">
-      <h3>How to apply</h3>
-      <p>
-        Because this is a GitHub Pages static site, the simplest path is to use a direct email call-to-action.
-      </p>
-      <p>
-        Ask candidates to send a resume, short note, and portfolio or writing sample to your real company inbox.
-      </p>
-      <a class="cta-btn" href="mailto:careers@miraikaneglobal.com">Email your application</a>
+      <div class="form-intro">
+        <p class="eyebrow">Application form</p>
+        <h3>Apply for a role</h3>
+        <p>Please fill below application and submit.</p>
+      </div>
+
+      <form id="application-form" class="application-form">
+        <div class="form-grid">
+          <div class="field">
+            <label for="first-name">First Name *</label>
+            <input id="first-name" name="first-name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="last-name">Last Name *</label>
+            <input id="last-name" name="last-name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="app-email">Email *</label>
+            <input id="app-email" name="app-email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone *</label>
+            <input id="phone" name="phone" type="tel" required>
+          </div>
+          <div class="field">
+            <label for="country">Country *</label>
+            <input id="country" name="country" type="text" required>
+          </div>
+          <div class="field">
+            <label for="address">Address</label>
+            <input id="address" name="address" type="text">
+          </div>
+          <div class="field full">
+            <label for="linkedin">LinkedIn Profile</label>
+            <input id="linkedin" name="linkedin" type="url" placeholder="https://www.linkedin.com/in/yourprofile">
+          </div>
+        </div>
+
+        <div class="file-row">
+          <div class="file-box">
+            <label for="resume">Resume / CV *</label>
+            <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx,.txt,.rtf">
+            <p class="helper-text">UI only on GitHub Pages. Attach the file manually to the email draft after submit.</p>
+          </div>
+          <div class="file-box">
+            <label for="cover-letter">Cover Letter</label>
+            <input id="cover-letter" name="cover-letter" type="file" accept=".pdf,.doc,.docx,.txt,.rtf">
+            <p class="helper-text">Optional. You will still need to attach it manually to the email draft.</p>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="field full">
+            <label for="availability">How soon are you available to start a new role? *</label>
+            <input id="availability" name="availability" type="text" required>
+          </div>
+          <div class="field">
+            <label for="work-auth">Are you presently authorized to work in the United States? *</label>
+            <select id="work-auth" name="work-auth" required>
+              <option value="">Select...</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sponsorship">Will you require visa sponsorship now or in the future? *</label>
+            <select id="sponsorship" name="sponsorship" required>
+              <option value="">Select...</option>
+              <option>No</option>
+              <option>Yes</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="salary">What are your salary expectations and total compensation expectations? *</label>
+            <textarea id="salary" name="salary" required></textarea>
+          </div>
+          <div class="field full">
+            <label for="location-check">Are you located in CA, CO, DC, FL, IL, MD, NJ, MA, NY, PA, SC, TX, or VA? If no, then please select No. *</label>
+            <select id="location-check" name="location-check" required>
+              <option value="">Select...</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="referral">Were you referred by a current employee? If yes, please indicate the specific employee. If no, then please say N/A.</label>
+            <input id="referral" name="referral" type="text">
+          </div>
+          <div class="field full">
+            <label for="outside-activities">Please disclose any outside business activities in which you participate that may present a possibility of conflict of interest.</label>
+            <textarea id="outside-activities" name="outside-activities"></textarea>
+          </div>
+          <div class="field full">
+            <label for="privacy-ack">Privacy Policy Acknowledgement *</label>
+            <select id="privacy-ack" name="privacy-ack" required>
+              <option value="">Select...</option>
+              <option>I acknowledge and agree</option>
+              <option>I do not agree</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="disability-box">
+          <h3>Voluntary Self-Identification of Disability</h3>
+          <p class="notice">This is optional. Keep or remove this section depending on your actual hiring process and compliance needs.</p>
+          <div class="field">
+            <label for="disability-status">Disability Status</label>
+            <select id="disability-status" name="disability-status">
+              <option value="">Select...</option>
+              <option>I do not wish to answer</option>
+              <option>Yes, I have a disability or have had one in the past</option>
+              <option>No, I do not have a disability</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="cta-btn" type="submit">Submit application</button>
+      </form>
     </article>
   </div>
 </section>
@@ -111,7 +211,7 @@
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="services.html">Services</a>
-          <a href="careers.html">Career</a>
+          <a href="careers.html">Careers</a>
           <a href="contact.html">Contact</a>
         </div>
         <div class="footer-column reveal">
@@ -129,7 +229,7 @@
       </div>
       <div class="footer-bottom">
         <span>© 2026 Miraikane Global. All rights reserved.</span>
-        <span>Replace placeholder copy, email, and location before launch.</span>
+        <span>Replace placeholder email, phone, and location before launch.</span>
       </div>
     </div>
   </footer>
